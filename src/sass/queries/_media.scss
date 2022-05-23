@@ -6,12 +6,29 @@
     width: 992px;
   }
 
-  .container > article:first-child {
-    flex: 1;
-    margin-right: 1.25rem;
-  }
+  .faq {
+    &__illustration {
+      img {
+        transform: translate(-20rem, 18rem);
+        height: 35rem;
+      }
+    }
+    &__shadow {
+      img {
+        transform: translate(-12rem, 5%);
+        width: 50rem;
+        left: 0;
+        top: 50;
+      }
+    }
 
-  .container > article:nth-child(2) {
-    flex: 1;
+    &__box {
+      display: block;
+      transform: translate(-35rem, 0);
+    }
+
+    &__heading {
+      text-align: left;
+    }
   }
 }

@@ -1,0 +1,40 @@
+@use "../sass/abstracts/variables" as color;
+
+.article-question {
+  border-bottom: 0.1rem solid color.$light-grayish-blue;
+  padding: 1rem 0;
+
+  & article {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    & h2 {
+      color: color.$very-dark-grayish-blue;
+      font-weight: 400;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: color.$soft-red;
+      }
+    }
+  }
+}
+
+.article-question article h2.clicked {
+  font-weight: 600;
+}
+
+.article-question p {
+  color: color.$dark-grayish-blue;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.icon {
+  color: color.$soft-red;
+}
