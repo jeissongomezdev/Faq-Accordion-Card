@@ -1,0 +1,44 @@
+@use "./sass/abstracts/variables" as color;
+
+.container {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 3rem;
+  width: 320px;
+  position: relative;
+  padding-top: 11rem;
+  padding-bottom: 5rem;
+}
+
+.faq {
+  &__illustration {
+    display: flex;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      top: -110px;
+      height: 180px;
+    }
+  }
+  &__shadow {
+    display: flex;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      top: -8px;
+    }
+  }
+
+  &__box {
+    display: none;
+  }
+
+  &__heading {
+    color: color.$very-dark-desaturated-blue;
+    font-size: 3.5rem;
+    margin: 1rem 0 1.25rem;
+    text-align: center;
+  }
+}
